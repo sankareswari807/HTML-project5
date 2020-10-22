@@ -1,13 +1,14 @@
-html,body,div{
+html,body,div,span{
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 .container{
     width: 100%;
     height: 100%;
 }
-
+ 
 .header-panel{
     background-color:#282D44;
     box-sizing: border-box;
@@ -37,6 +38,7 @@ html,body,div{
     color: white;
     cursor: pointer;
     font-size: 25px;
+    font-weight: 800;
     float: left;
     padding-left: 15px;
     padding-top: 22px;
@@ -46,6 +48,8 @@ html,body,div{
     float: left;
     padding-left: 15px;
     padding-top: 17px;
+    cursor: pointer;
+
 }
 .organize{
     border: none;
@@ -63,6 +67,7 @@ html,body,div{
     word-spacing: 1em;
 }
 
+
 .subscription{
     font-size: 16px;
     color: #C7A246;
@@ -76,40 +81,59 @@ html,body,div{
     cursor: pointer;
 }
 
+/* .main-section{
+    
+} */
+
 .navigation-panel{
-    display: inline-block;
-    background-color: #B2B9D4;
-    border:1px solid #B2B9D4;
+    min-height: 100%;
+    color: #d4b9f7;
+    background-color:   #F6F6FB;
+    border:1px solid #F6F6FB;
 }
 
 .developement,.deploy,.manage{
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 30px;
+    padding-left: 15px;
 }
 
 .developement-categories,.deploy-categories,.manage-categories{
-    padding: 20px;
+    padding-left: 30px;
     font-size: 20px;
+    padding-top: 20px;
 }
 
 .develope-head,.deploy-head,.manage-head{
-    font-size: 25px;
-    font-family: fantasy;
+    font-size: 15px;
+    cursor: pointer;
+    color: #69707E  ;
 }
 
 .item{
-    padding: 10px 20px;
+    width: 225px;
+    height: auto;
+    padding: 10px 0px;
 }
 
 .item-icon{
-    word-spacing: 1em;
     color: #7F85A1;
+    cursor: pointer;
 }
 
+.item-name{
+    width: 150px;
+    height: auto;
+    color:#6B778E;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 15px;
+    cursor: pointer;
+}
 
 .main-content{
     float: right;
     width: 86%;
+    min-height:100%;
 } 
 
 .all-content{
@@ -117,10 +141,10 @@ html,body,div{
 }
 
 .all-head{
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
     color: #717B8D;
-    padding-left: 20px;
+    padding-left: 40px;
+    cursor: pointer;
 }
 
 .search-content{
@@ -133,7 +157,7 @@ html,body,div{
     color:#B2B9D4;
     font-size: 20px;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 form{
@@ -141,44 +165,63 @@ form{
 }
 
 .search-input{
+    font-family: 'Lato', sans-serif;
     outline: none;
     border: none;
-    font-size: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 25px;
 }
 
 .first-column,.second-column,.third-column{
     float: left;
-    padding-left: 20px;
+    padding-left: 27px;
 }
 
 .content-head{
     width: 35%  ;
-    font-size: 20px;
+    font-size: 18px;
     color: #717B8D;
     padding-left: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+    font-size: 17px;
 }
 
 li{
-    font-size: 18px;
+    font-size: 17px;
     list-style-type: none;
-    padding: 10px;
-    color: #313A4D;
+    padding: 15px;
+    color: #69707E;
+    cursor: pointer;
+
 }
 .categories{
     width: 100%;
-    border:2px solid #F3F4F9;
+    min-height: auto;
+    background-color: #FDFDFF;
+    border: 2px solid #F6F6F9;
     float: left;
+    padding-right: 25px;
 }
 
 .leftside-categories{
     float: left;
-    width: 40%;
-    padding-left:15px;
+    width: 45%;
 }
 
 .rightside-categories{
     float: left;
-    width: 30%;
+    width: 35%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .optionbox{
+        display: none;
+    }
+
+    .subscription{
+        display: none;
+    }
 }
